@@ -1,0 +1,45 @@
+.my-main-style {
+  border-bottom: 2px solid yellow;
+  background: rgb(82, 77, 77);
+  h5 {
+    color: white;
+    margin-top: 10px;
+  }
+  .logo {
+    width: 320px;
+    margin-left: 10px;
+  }
+  .foto_nav {
+    display: flex;
+    img {
+      width: 150px;
+      height: 100px;
+      margin: 5px 5px;
+      display: none;
+    }
+  }
+  .my-but-drop {
+    background: green;
+  }
+  .my-li {
+    &:hover {
+      background: rgb(106, 190, 106);
+    }
+  }
+  .my-galery {
+    color: white !important;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .img-first,
+  .img-second {
+    display: block !important;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .img-first,
+  .img-second,
+  .img-three {
+    display: block !important;
+  }
+}

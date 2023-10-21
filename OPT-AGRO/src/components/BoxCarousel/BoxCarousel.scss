@@ -1,0 +1,20 @@
+@keyframes box_animation {
+  0% {
+    opacity: 0%;
+  }
+}
+.my-style-carusele {
+  .my-style-img {
+    img {
+      border-top: 2px solid yellow;
+      border-bottom: 2px solid green;
+      height: 500px;
+    }
+    h2 {
+      color: white;
+      animation: box_animation 4s;
+      animation-iteration-count: 1;
+      margin: 20px;
+    }
+  }
+}
