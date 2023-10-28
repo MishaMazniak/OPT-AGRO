@@ -1,9 +1,9 @@
 import "./Navbar.scss"
-import Dropdown from "../../../node_modules/react-bootstrap/Dropdown"
 import {Link} from "react-router-dom"
-import foto1 from "../../assets/img/foto1.jpeg"
-import foto2 from "../../assets/img/foto2.jpeg"
-import foto3 from "../../assets/img/foto3.jpeg"
+import foto1 from "../../assets/img/Pipeline2022/montazh-truboprovoda-2022--2-.webp"
+import foto2 from "../../assets/img/AccumulatorWoter/nakopitel--12-.webp"
+import foto3 from "../../assets/img/PumpingStation/rekonstrukciya-nasosnoy--2-.webp"
+import Provide from "./Provide/Provide"
 
 function Navbar() {
   return (
@@ -34,76 +34,16 @@ function Navbar() {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-
           <div
             className="collapse navbar-collapse justify-content-end my-style-but"
             id="navbarNav"
           >
             <ul className="navbar-nav">
-              <div className="my-1">
-                <Dropdown>
-                  <Dropdown.Toggle variant="success">
-                    НАДАЄМО ПОСЛУГИ
-                  </Dropdown.Toggle>
-                  <Dropdown.Menu>
-                    <Dropdown.Item>
-                      <Link to="/inginer" className="nav-link">
-                        <span className="my-li">Інжинера-проектанта</span>
-                      </Link>
-                    </Dropdown.Item>
-                    <Dropdown.Item>
-                      <Link to="/channel" className="nav-link">
-                        <span className="my-li">
-                          Будівництва та ремонту каналів
-                        </span>
-                      </Link>
-                    </Dropdown.Item>
-                    <Dropdown.Item>
-                      <Link to="/welding" className="nav-link">
-                        <span className="my-li">Стикового зварювання</span>
-                      </Link>
-                    </Dropdown.Item>
-                    <Dropdown.Item>
-                      <Link to="/instal" className="nav-link">
-                        <span className="my-li">
-                          Монтажу та ремонту трубопроводу
-                        </span>
-                      </Link>
-                    </Dropdown.Item>
-                    <Dropdown.Item>
-                      <Link to="/bank" className="nav-link">
-                        <span className="my-li">Зміцнення берегів</span>
-                      </Link>
-                    </Dropdown.Item>
-                    <Dropdown.Item>
-                      <Link to="/pomps" className="nav-link">
-                        <span className="my-li">
-                          Будівництва та ремонту насосних станцій
-                        </span>
-                      </Link>
-                    </Dropdown.Item>
-                    <Dropdown.Item>
-                      <Link to="/accumulat" className="nav-link">
-                        <span className="my-li">Будівництва накопичувачів</span>
-                      </Link>
-                    </Dropdown.Item>
-                    <Dropdown.Item>
-                      <li>
-                        <hr className="dropdown-divider"></hr>
-                      </li>
-                    </Dropdown.Item>
-                    <Dropdown.Item>
-                      <Link to="/" className="nav-link">
-                        <span className="my-li">
-                          <b>Продаж труб</b>
-                        </span>
-                      </Link>
-                    </Dropdown.Item>
-                  </Dropdown.Menu>
-                </Dropdown>
-              </div>
+              <Provide></Provide>
               <li className="nav-item btn btn-success mx-5 my-1">
-                <a className="nav-link py-0 my-galery">ГАЛЕРЕЯ</a>
+                <Link to="/gallery" className="nav-link py-0 my-galery">
+                  ГАЛЕРЕЯ
+                </Link>
               </li>
             </ul>
           </div>

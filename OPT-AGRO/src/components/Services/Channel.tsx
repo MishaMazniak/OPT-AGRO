@@ -4,6 +4,15 @@ function Channel() {
   return (
     <div className="container my-styl-service">
       <h1 className="text-center">Будівництво та ремонт каналів</h1>
+      <iframe
+        className="container"
+        src="https://www.youtube.com/embed/AWUJxurRSaQ"
+        title="Строительство канала подачи воды в Днепропетровской области компанией Опт-Агро"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowFullScreen
+      ></iframe>
+      <br></br>
+      <br></br>
       <p>
         <b>Монтажно-будівельна компанія «Опт-Агро»</b> в Україні надає послуги
         будівництва та монтажу каналів підведення та відведення води, згідно
