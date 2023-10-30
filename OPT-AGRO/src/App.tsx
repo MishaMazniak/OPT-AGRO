@@ -12,6 +12,7 @@ import Bank from "./components/Services/Bank"
 import Pomps from "./components/Services/Pomps"
 import Accumulat from "./components/Services/Accumulat"
 import Gallery from "./components/Navbar/Gallery/Gallery"
+import SalePipes from "./components/Navbar/Provide/SalePipes"
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route path="/pomps" element={<Pomps></Pomps>}></Route>
         <Route path="/accumulat" element={<Accumulat></Accumulat>}></Route>
         <Route path="/gallery" element={<Gallery></Gallery>}></Route>
+        <Route path="/salepipes" element={<SalePipes></SalePipes>}></Route>
       </Routes>
       <UsBenefits></UsBenefits>
       <Footer></Footer>

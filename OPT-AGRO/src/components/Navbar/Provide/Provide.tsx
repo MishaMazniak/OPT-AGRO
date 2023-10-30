@@ -51,7 +51,7 @@ function Provide() {
               </li>
             </Dropdown.Item>
             <Dropdown.Item>
-              <Link to="/" className="nav-link">
+              <Link to="/salepipes" className="nav-link">
                 <span className="my-li">
                   <b>Продаж труб</b>
                 </span>
